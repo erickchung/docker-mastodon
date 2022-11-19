@@ -7,4 +7,4 @@ PATH="${PATH}:/app/www/bin"
 cd /app/www || exit 1
 
 exec \
-    s6-setuidgid abc /usr/bin/bundle exec sidekiq
+    s6-setuidgid abc /usr/bin/bundle exec sidekiq -c 15
